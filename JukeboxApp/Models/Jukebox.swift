@@ -102,13 +102,17 @@ class Jukebox {
         return artistMusics
     }
     
+    func searchSelectedMusic(name: String) -> Music? {
+        return musicsToPlay.first { $0.name == name}
+    }
+    
     func removeMusic(name: String) {
         if let indexToRemove = musicsToPlay.firstIndex(where: {$0.name == name}){
             musicsToPlay.remove(at: indexToRemove)
         }
     }
     
-    func mostPlayedMusics() -> [Music] {
+    func getMostPlayedMusics() -> [Music] {
         let vector = availableMusics.sorted(by: {$0.timesPlayed > $1.timesPlayed})
         return vector.filter {music in music.timesPlayed > 0}
     }
