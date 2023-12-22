@@ -17,13 +17,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var userCredits: UILabel!
     
+    /*
+     List of available musics to search:
+     1. Hound Dog
+     2. Somebody to Love
+     3. O que sobrou do ceu
+     4. Auto-reverse
+     5. Blinding Lights
+     6. Vira-vira
+    */
     @IBAction func searchButtonTapped(_ sender: UIButton) {
         startSearch()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        descriptionLabel.lineBreakMode = .byWordWrapping
         userCredits.text = "User credit balance: \(user.credits)"
     }
     

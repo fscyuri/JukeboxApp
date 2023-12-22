@@ -28,7 +28,7 @@ class Jukebox {
         availableMusics = [
             Music(id: 0, name: "Hound Dog", artist: artists[0], duration: 2.16),
             Music(id: 1, name: "Somebody to Love", artist: artists[1], duration: 4.55, score: "8.2"),
-            Music(id: 2, name: "O que sobrou do céu", artist: artists[2], duration: 4.10, score: "7.5"),
+            Music(id: 2, name: "O que sobrou do ceu", artist: artists[2], duration: 4.10, score: "7.5"),
             Music(id: 3, name: "Auto-reverse", artist: artists[2], duration: 4.45),
             Music(id: 4, name: "Blinding Lights", artist: artists[3], duration: 3.21),
             Music(id: 5, name: "Vira-vira", artist: artists[4], duration: 2.23),
